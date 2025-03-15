@@ -1,0 +1,25 @@
+/* 원의 기본 스타일 */
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: -60px; /* 초기 위치 (화면 밖 왼쪽) */
+    animation: moveCircle 3s linear infinite; /* 애니메이션 적용 */
+  }
+  
+  /* 애니메이션 정의: 원이 화면을 가로지르며 움직임 */
+  @keyframes moveCircle {
+    0% {
+      left: -60px; /* 시작 위치 (화면 왼쪽 밖) */
+    }
+    50% {
+      left: 50%; /* 화면의 중앙 */
+      transform: translateX(-50%); /* 원이 화면 가운데에 오도록 */
+    }
+    100% {
+      left: 100%; /* 끝 위치 (화면 오른쪽 밖) */
+    }
+  }
