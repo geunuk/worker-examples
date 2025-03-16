@@ -1,4 +1,4 @@
-export const sumOfSquares = (num) => {
+export function sumOfSquares(num) {
   let result = 0;
 
   for (let i = 1; i <= num; i++) {
@@ -6,4 +6,4 @@ export const sumOfSquares = (num) => {
   }
 
   return result;
-};
+}
